@@ -1,3 +1,80 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  background-image: url("../images/event/13.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  @include pad {
+    height: 518px;
+  }
+}
+.category-img {
+  width: 40px;
+  height: 40px;
+  @include pad {
+    width: 80px;
+    height: 80px;
+  }
+}
+.sparkler-icon {
+  width: 20px;
+  height: 20px;
+  @include pad {
+    width: 24px;
+    height: 24px;
+  }
+}
+.category-hover:hover {
+  text-decoration: underline;
+}
+.more-hover:hover::before {
+  content: "";
+  position: absolute;
+  transform: translate(-35%, -5%);
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background-color: $secondary;
+  z-index: -1;
+}
+.recent-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  @include pad {
+    height: 255px;
+  }
+}
+.online-img {
+  width: 100%;
+  height: 158px;
+  object-fit: cover;
+  object-position: 50% 32%;
+  @include pad {
+    height: 340px;
+  }
+}
+.tag-border {
+  border-left-width: 4px !important;
+}
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+.album-img {
+  // width: 267px;
+  height: 267px;
+  // object-fit: cover;
+  @include mobile {
+    // width: 274px;
+    height: 274px;
+  }
+}
+.middle-rotate-4 {
+  transform: translate(-50%, -50%) rotate(-4deg);
+}
+.rotate-2 {
+  transform: rotate(2deg);
+}
+.rotate-anti-2 {
+  transform: rotate(-2deg);
 }
